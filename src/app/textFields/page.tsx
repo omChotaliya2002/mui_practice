@@ -75,7 +75,7 @@ const Page = () => {
             }
 
             if(isValid){
-                alert(`Username : ${name}, you have successfully logged in!!`);
+                alert(`${name}, you have successfully logged in!!`);
                 router.push("/");
             }
 
@@ -88,7 +88,13 @@ const Page = () => {
 
   return (
 <>
-    <div className="flex flex-col w-[400px] h-[350px] mx-auto items-center justify-center mt-[100px] gap-y-6" style={{border:"1px solid black"}}>
+
+        <div className="flex items-center justify-center mt-[80px]">
+            <h1 className="text-2xl font-semibold underline underline-offset-[7px]"> Login Form </h1>
+        </div>
+
+    <div className="flex flex-col w-[400px] h-[350px] mx-auto items-center justify-center mt-[30px] mb-[100px] gap-y-6" style={{border:"1px solid black"}}>
+
 
             <TextField id="username" variant="outlined" value={name} onChange={handleUnameChange} label="Username" type="name" error={unameBool}
                 slotProps={{

@@ -12,6 +12,7 @@ export default function Home() {
 <>
       <div className="flex flex-col items-center justify-center bg-white w-[300px] mt-[100px] mx-auto" style={{border:"1px solid white"}}>
 
+
           <h1 className="text-xl font-semibold text-black mb-[10px] mt-[20px]"> Stack </h1>
 
             <Stack spacing={2} direction="row" className="mb-[20px]">

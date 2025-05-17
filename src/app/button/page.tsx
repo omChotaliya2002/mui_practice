@@ -35,15 +35,13 @@ const Page = () => {
 <>    
   <div className="w-full h-full" style={{border:"0px solid black"}}>
 
-  <Link href={"/radioButton"}>
-      <div className="flex items-center justify-center w-[100px] mt-[50px] ml-[1020px] space-x-1 hover:scale-105 hover:cursor-pointer" style={{border:"0px solid black"}}>  
-            <AddCircleOutline fontSize="medium"/> <h1> Add User </h1>
-      </div>
-  </Link>
-
-      <div className="flex items-center justify-center w-[40px] mt-[-50px] ml-[20px] hover:cursor-pointer" style={{border:"0px solid black"}}> 
-                  <Dehaze fontSize="small"/>
-      </div>
+  <div className="flex items-center justify-center mt-[30px] mx-auto space-x-[1050px] hover:cursor-pointer" style={{border:"0px solid black"}}>  
+  
+            <Dehaze fontSize="small"/>
+          <Link href={"/radioButton"}>
+         <div className="flex flex-row space-x-1 hover:scale-105"> <AddCircleOutline fontSize="medium"/> <h1> Add User </h1>  </div>
+          </Link>
+  </div>
 
       <div className="flex items-center justify-center mt-[100px] gap-7" style={{border:"0px solid black"}}>
 
