@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "om",
+      "designation": "fullstack developer",
+      "email": "om123@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "khush",
+      "designation": "HR manager",
+      "email": "khushi49@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "dev",
+      "designation": "Backend developer",
+      "email": "dev7008@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "nidhi",
+      "designation": "UI designer",
+      "email": "nidhu007@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "ajay",
+      "designation": "magento developer",
+      "email": "aj8989@gmail.com"
+    }
+  ]
+}
