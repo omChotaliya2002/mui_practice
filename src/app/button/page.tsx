@@ -5,14 +5,11 @@ import React from 'react';
 import {IconButton} from "@mui/material";
 import { Refresh } from "@mui/icons-material";
 import {Tooltip} from "@mui/material";
-import { AddCircleOutline } from "@mui/icons-material";
-import { Dehaze } from "@mui/icons-material";
 import Link from "next/link";
 
 
-
 const Page = () => {
-  
+
 
       // for button 1 : 
 
@@ -26,22 +23,17 @@ const Page = () => {
   // for button 2 : 
     const handleRefresh = () => {
 
-            window.location.reload();
+            location.reload();
 
     }
+
+
+
 
   return (
 
 <>    
   <div className="w-full h-full" style={{border:"0px solid black"}}>
-
-  <div className="flex items-center justify-center mt-[30px] mx-auto space-x-[1050px] hover:cursor-pointer" style={{border:"0px solid black"}}>  
-  
-            <Dehaze fontSize="small"/>
-          <Link href={"/radioButton"}>
-         <div className="flex flex-row space-x-1 hover:scale-105"> <AddCircleOutline fontSize="medium"/> <h1> Add User </h1>  </div>
-          </Link>
-  </div>
 
       <div className="flex items-center justify-center mt-[100px] gap-7" style={{border:"0px solid black"}}>
 
@@ -72,6 +64,7 @@ const Page = () => {
                       }],
                     },
                   }}>
+
           <IconButton color="primary" aria-label="refresh" onClick={handleRefresh}>  
               <Refresh/>
           </IconButton>
