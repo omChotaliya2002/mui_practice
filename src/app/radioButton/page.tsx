@@ -68,12 +68,12 @@ const page = () => {
 
 <form onSubmit={handleSubmit}>
 
-    <div className="flex items-center justify-center mt-[80px]">
+    <div className="flex items-center justify-center mt-[120px]">
         <h1 className="text-3xl font-semibold underline underline-offset-[7px]"> Regestration Form </h1>
     </div>
 
     
-    <div className="flex flex-col items-center justify-center h-[600px] w-[500px] mt-[40px] mb-[100px] select-none gap-y-4 mx-auto hover:rounded-xl" 
+    <div className="flex flex-col items-center justify-center h-[600px] w-[420px] mt-[40px] mb-[100px] select-none gap-y-4 mx-auto hover:rounded-xl" 
         style={{border:"1px solid black"}}>
     
             <TextField value={name} label="Name" size="small" onChange={(e)=> setName(e.target.value)}

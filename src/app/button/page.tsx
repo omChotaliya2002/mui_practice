@@ -35,7 +35,7 @@ const Page = () => {
 <>    
   <div className="w-full h-full" style={{border:"0px solid black"}}>
 
-      <div className="flex items-center justify-center mt-[100px] gap-7" style={{border:"0px solid black"}}>
+      <div className="flex items-center justify-center mt-[140px] gap-7" style={{border:"0px solid black"}}>
 
            <Tooltip title="Show alert"
                 slotProps={{
