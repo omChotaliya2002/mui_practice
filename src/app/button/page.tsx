@@ -43,7 +43,7 @@ const Page = () => {
                     modifiers: [{
                         name: 'offset',
                         options: {
-                          offset: [-633, -210],
+                          // offset: [-633, -210],
                         }
                       }],
                     },
@@ -59,7 +59,7 @@ const Page = () => {
                     modifiers: [{
                         name: 'offset',
                         options: {
-                          offset: [-745, -210],
+                          // offset: [-745, -210],
                         }
                       }],
                     },
