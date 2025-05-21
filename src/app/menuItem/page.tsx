@@ -75,10 +75,8 @@ const Page = () => {
             },
         }}
             // The menu will be anchored to the bottom-right corner of the avatar button.
-            transformOrigin={{ horizontal: 'right', vertical : 'bottom'}}
+            transformOrigin={{ horizontal: 'center', vertical : 'bottom'}}
              anchorOrigin={{ horizontal: 'center' , vertical : 'bottom' }}
-        
-        
         >
 
             <MenuItem>
