@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Home, PersonAddAlt1, TableChart, Article } from "@mui/icons-material";
+import { Home, PersonAddAlt1, TableChart, Article, FormatListBulleted } from "@mui/icons-material";
 import { Toolbar } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
@@ -41,22 +41,28 @@ const Page = ({window, children} : Props) => {
       {text : 'Button', icon : <Gamepad/>, path : "/button"},
       {text : 'Grid', icon : <TableChart/>, path : "/Grid"},
       {text : 'Card', icon : <Article/>, path : "/card"},
+      {text : 'Menu', icon : <FormatListBulleted/>, path : "/menuItem"},
     ]
 
     const drawer = (
       <div>
 
-          <Toolbar/>
-          <Divider/>
+          <Toolbar>
 
-          <List>
+            <Typography sx={{fontWeight : "bold"}}> Material UI Components  </Typography>
+
+          </Toolbar>
+
+          <Divider style={{border : "0px solid black"}}/>
+
+          <List style={{border: "0px solid black"}}>
               {
                 menuItems.map((item)=> (
 
                     <ListItem key={item.text} style={{border : "0px solid black"}}>
                     
                       <Link href={item.path} onClick={()=> setDrawerOpen(false)} className="flex flex-row space-x-2 hover:scale-105">
-                        <ListItemIcon style={{border : "0px solid black", minWidth : "10px"}}>  {item.icon} </ListItemIcon>
+                        <ListItemIcon style={{border : "0px solid black", minWidth : "10px", marginTop : "3.5px"}}>  {item.icon} </ListItemIcon>
                          <ListItemText className="" style={{border : "0px solid black"}} primary = {item.text}/>
                       </Link>
 

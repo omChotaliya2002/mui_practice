@@ -3,8 +3,9 @@
 import {Grid}  from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Link from "next/link";
+import React from 'react';
 
-const page = () => {
+const Page: React.FC = () => {
 
 
     // const MyPaper = styled(Paper)(({theme}) => ({
@@ -20,7 +21,7 @@ const page = () => {
   return (
 <>
 
-<div className="bg-gray-300 h-[200px] mt-[50px]" style={{border:"1px solid black"}}>
+<div className="bg-gray-300 h-[200px] mt-[100px]" style={{border:"1px solid black"}}>
 
     <Grid container spacing={2} className = "flex items-center justify-center mt-[60px] p-2">
 
@@ -59,4 +60,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;

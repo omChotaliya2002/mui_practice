@@ -13,7 +13,7 @@ const Page = () => {
 
       // for button 1 : 
 
-      function showMsg() {
+      function showMsg(): void {
 
           alert("you've clicked me..")
 
@@ -21,7 +21,7 @@ const Page = () => {
 
 
   // for button 2 : 
-    const handleRefresh = () => {
+    const handleRefresh = (): void => {
 
             location.reload();
 
