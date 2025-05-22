@@ -18,6 +18,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import AppBar from "@mui/material/AppBar";
 import { Gamepad } from "@mui/icons-material";
 
+import Menu from "../component/Menu";
 
 const drawerWidth = 240;
 
@@ -87,19 +88,23 @@ const Page = ({window, children} : Props) => {
 
     <AppBar position="fixed" style={{border:"0px solid yellow"}}>
 
-      <Toolbar>
+      <Toolbar style={{border : "0px solid red"}}>
 
           <IconButton color="inherit" aria-label="open drawer" edge = "start" onClick={handleDrawerToggle}
           sx={{transform : drawerOpen ? 'rotate(90deg)' : 'rotate(0deg)', transition : drawerOpen ? '' : 'transform 0.3s ease-in-out'}}>
                 <Dehaze fontSize="small"/>
           </IconButton>
 
-      <Link href={"/"}>
-          <Typography sx={{fontWeight : "bold", marginLeft : "10px"}}>
+
+      <Link href={"/"} style={{border: "0px solid white"}}>
+          <Typography sx={{fontWeight : "bold", width : "160px" , marginLeft : "10px"}}>
               Material UI Practice
           </Typography>
       </Link>
 
+    <div className="ml-[920px]" style={{border : "0px solid white"}}> 
+        <Menu/>
+    </div>
 
       </Toolbar>
     </AppBar>

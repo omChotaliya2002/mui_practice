@@ -90,7 +90,7 @@ const Page = () => {
 <>
 
         <div className="flex items-center justify-center mt-[80px]">
-            <h1 className="text-2xl font-semibold underline underline-offset-[7px]"> Login Form </h1>
+            <h1 className="text-3xl font-mono underline underline-offset-[7px]" style={{fontWeight : "bold"}}> Login </h1>
         </div>
 
     <div className="flex flex-col w-[400px] h-[350px] mx-auto items-center justify-center mt-[30px] mb-[100px] gap-y-6" style={{border:"1px solid black"}}>
