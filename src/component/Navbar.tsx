@@ -94,7 +94,7 @@ const Page = ({window, children} : Props) => {
                 <Dehaze fontSize="small"/>
           </IconButton>
 
-    <div className="flex items-center justify-center space-x-[940px]" style={{border : "0px solid white"}}> 
+    <div className="flex items-center justify-between w-full" style={{border : "0px solid white"}}> 
 
 
       <Link href={"/"} style={{border: "0px solid white"}}>
