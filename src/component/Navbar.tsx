@@ -42,7 +42,6 @@ const Page = ({window, children} : Props) => {
       {text : 'Button', icon : <Gamepad/>, path : "/button"},
       {text : 'Grid', icon : <TableChart/>, path : "/Grid"},
       {text : 'Card', icon : <Article/>, path : "/card"},
-      {text : 'Menu', icon : <FormatListBulleted/>, path : "/menuItem"},
     ]
 
     const drawer = (
@@ -102,7 +101,7 @@ const Page = ({window, children} : Props) => {
           </Typography>
       </Link>
 
-    <div className="ml-[920px]" style={{border : "0px solid white"}}> 
+    <div className="ml-[940px]" style={{border : "0px solid white"}}> 
         <Menu/>
     </div>
 
