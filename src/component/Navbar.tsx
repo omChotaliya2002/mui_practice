@@ -94,6 +94,8 @@ const Page = ({window, children} : Props) => {
                 <Dehaze fontSize="small"/>
           </IconButton>
 
+    <div className="flex items-center justify-center space-x-[920px]" style={{border : "0px solid white"}}> 
+
 
       <Link href={"/"} style={{border: "0px solid white"}}>
           <Typography sx={{fontWeight : "bold", width : "160px" , marginLeft : "10px"}}>
@@ -101,8 +103,8 @@ const Page = ({window, children} : Props) => {
           </Typography>
       </Link>
 
-    <div className="ml-[940px]" style={{border : "0px solid white"}}> 
-        <Menu/>
+          <Menu/>
+
     </div>
 
       </Toolbar>
