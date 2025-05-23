@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 // 🧠 Helper to check routes where Navbar should be hidden : 
 
 const shouldHideNavbar = (pathname : string) => {
-  return ["/textFields", "/radioButton"].includes(pathname);
+  return ["/login", "/registration"].includes(pathname);
 }
 
 

@@ -55,7 +55,7 @@ const page = () => {
         setConfPassword("");
 
         
-            router.push("/textFields");   
+            router.push("/login");   
 
         // router.push("textFields");
 
@@ -68,7 +68,7 @@ const page = () => {
 
 <form onSubmit={handleSubmit}>
 
-    <div className="flex items-center justify-center mt-[120px]">
+    <div className="flex items-center justify-center mt-[40px]">
         <h1 className="text-3xl font-semibold underline underline-offset-[7px]"> Regestration Form </h1>
     </div>
 

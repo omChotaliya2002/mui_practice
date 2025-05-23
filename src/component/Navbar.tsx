@@ -17,6 +17,7 @@ import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import AppBar from "@mui/material/AppBar";
 import { Gamepad } from "@mui/icons-material";
+import Image from "next/image";
 
 import Menu from "../component/Menu";
 
@@ -36,7 +37,7 @@ const Page = ({window} : Props) => {
     };
 
     const menuItems = [
-      {text : 'Home', icon : <Home/>, path : "/"},
+      {text : 'Home', icon : <Home/>, path : "/home"},
       {text : 'Button', icon : <Gamepad/>, path : "/button"},
       {text : 'Grid', icon : <TableChart/>, path : "/Grid"},
       {text : 'Card', icon : <Article/>, path : "/card"},
@@ -46,10 +47,10 @@ const Page = ({window} : Props) => {
     const drawer = (
       <div>
 
-          <Toolbar style={{marginTop : "10px"}}>
+          <Toolbar style={{height : "150px", backgroundColor : "#e5e4e2"}}>
 
-            <Typography sx={{fontWeight : "bold", fontFamily : "unset", fontSize:"17px"}}> Material UI Components  </Typography>
-
+            <Image className="mx-7" src={"/images/logo.png"} alt="Web World" height={130} width={130}/>
+ 
           </Toolbar>
 
           <Divider style={{border : "1.5px solid #d3d3d3"}}/>
@@ -98,7 +99,7 @@ const Page = ({window} : Props) => {
 
       <Link href={"/"} style={{border: "0px solid white"}}>
           <Typography sx={{fontWeight : "bold", width : "160px" , marginLeft : "10px"}}>
-              Material UI Practice
+              Web World
           </Typography>
       </Link>
 

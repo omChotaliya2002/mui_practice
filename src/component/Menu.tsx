@@ -99,7 +99,7 @@ const Page = () => {
             </MenuItem>
         </Link>
 
-        <Link href={"/textFields"}> 
+        <Link href={"/login"}> 
             <MenuItem>
                 <ListItemIcon>
                     <Logout/>
