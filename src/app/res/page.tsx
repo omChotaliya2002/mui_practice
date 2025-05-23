@@ -33,30 +33,32 @@ const page = () => {
     try{
 
         const getResponse = await api.get();
-        setGetRes(getResponse.data);
+        setGetRes(getResponse.data.data);
         setGetResStatus(getResponse.status);
-        setGetResStText(getResponse.statusText);
+        setGetResStText(getResponse.data.statusText);
+        console.log(getResponse);
+
 
         const postResponse = await api.post({name : "omi", email : "omi123@gmai.com"});
-        setPostRes(postResponse.data);
+        setPostRes(postResponse.data.data);
         setPostResStatus(postResponse.status);
-        setPostResStText(postResponse.statusText);
+        setPostResStText(postResponse.data.statusText);
 
         const putResponse = await api.put({name : "omi updated"});
-        setPutRes(putResponse.data);
+        setPutRes(putResponse.data.data);
         setPutResStatus(putResponse.status);
-        setPutResStText(putResponse.statusText);
+        setPutResStText(putResponse.data.statusText);
 
         const patchResponse = await api.patch({email : 'new@gmail.com'});
-        setPatchRes(patchResponse.data);
+        setPatchRes(patchResponse.data.data);
         setPatchResStatus(patchResponse.status);
-        setPatchResStText(patchResponse.statusText);
-        console.log(patchResponse);
+        setPatchResStText(patchResponse.data.data.statusText);
+        // console.log(patchResponse);
 
         const deleteResponse = await api.delete();
-        setDeleteRes(deleteResponse.data);
+        setDeleteRes(deleteResponse.data.data);
         setDeleteResStatus(deleteResponse.status);
-        setDeleteResStText(deleteResponse.statusText);
+        setDeleteResStText(deleteResponse.data.statusText);
     }
     catch(error){
         console.error("API error : ", error);
