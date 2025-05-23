@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Home, PersonAddAlt1, TableChart, Article, Api } from "@mui/icons-material";
+import { Home, TableChart, Article, Api } from "@mui/icons-material";
 import { Toolbar } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
@@ -24,10 +24,9 @@ const drawerWidth = 240;
 
 interface Props{
   window?: () => Window;
-  children : React.ReactNode;
 }
 
-const Page = ({window, children} : Props) => {
+const Page = ({window} : Props) => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -38,7 +37,6 @@ const Page = ({window, children} : Props) => {
 
     const menuItems = [
       {text : 'Home', icon : <Home/>, path : "/"},
-      {text : 'Add User', icon : <PersonAddAlt1/>, path : "/radioButton"},
       {text : 'Button', icon : <Gamepad/>, path : "/button"},
       {text : 'Grid', icon : <TableChart/>, path : "/Grid"},
       {text : 'Card', icon : <Article/>, path : "/card"},
@@ -48,15 +46,15 @@ const Page = ({window, children} : Props) => {
     const drawer = (
       <div>
 
-          <Toolbar>
+          <Toolbar style={{marginTop : "10px"}}>
 
-            <Typography sx={{fontWeight : "bold"}}> Material UI Components  </Typography>
+            <Typography sx={{fontWeight : "bold", fontFamily : "unset", fontSize:"17px"}}> Material UI Components  </Typography>
 
           </Toolbar>
 
-          <Divider style={{border : "0px solid black"}}/>
+          <Divider style={{border : "1.5px solid #d3d3d3"}}/>
 
-          <List style={{border: "0px solid black"}}>
+          <List style={{marginTop : "20px",border: "0px solid black"}}>
               {
                 menuItems.map((item)=> (
 
