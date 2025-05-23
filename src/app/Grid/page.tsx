@@ -45,17 +45,6 @@ const Page: React.FC = () => {
     </Grid>
 </div>
 
-    <div className="flex flex-row items-center justify-center mt-[140px] space-x-14">
-
-        <Link href={"/button"}>
-            <button className="w-[140px] h-[40px] ring-[2px] ring-black bg-black text-white font-semibold rounded-lg hover:bg-white hover:text-black hover:cursor-pointer active:bg-gray-400 transition-all delay-75"> &#x21d0; Prev. Page </button>
-        </Link>
-
-        <Link href={"/card"}>
-            <button className="w-[140px] h-[40px] ring-[2px] ring-black bg-black text-white font-semibold rounded-lg hover:bg-white hover:text-black hover:cursor-pointer active:bg-gray-400 transition-all delay-75"> Next Page &#x21d2; </button>
-        </Link>
-      </div>
-
 </>
   )
 }

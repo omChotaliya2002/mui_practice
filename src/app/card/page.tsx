@@ -97,12 +97,6 @@ const Page = () => {
         </Card>
       
     {/* </div> */}
-
-        <div className="flex items-center justify-center mb-[80px]">
-            <Link href={"/Grid"}>
-                    <button className="w-[140px] h-[40px] ring-[2px] ring-black bg-black text-white font-semibold rounded-lg hover:bg-white hover:text-black hover:cursor-pointer active:bg-gray-400 transition-all delay-75"> &#x21d0; Prev. Page </button>
-            </Link>
-        </div>
 </>
 
   )

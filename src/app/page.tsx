@@ -36,15 +36,6 @@ export default function Home() {
 
       </div>
 
-      <div className="flex flex-row items-center justify-center mt-[30px] space-x-4">
-
-        <Link href={"/button"}>
-            <button className="w-[140px] h-[40px] ring-[2px] ring-black bg-black text-white font-semibold rounded-lg hover:bg-white hover:text-black active:bg-gray-400 transition-all delay-75 cursor-pointer"> 
-                Next Page &#x21d2; </button>
-        </Link>
-
-      </div>
-
 </>
     
   );

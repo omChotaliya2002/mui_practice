@@ -12,6 +12,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import { Visibility } from "@mui/icons-material";
 import { VisibilityOff } from "@mui/icons-material";
 import { useRouter } from "next/navigation";
+import axios from "axios";
 
 const Page = () => {
 
@@ -53,8 +54,19 @@ const Page = () => {
             setPassError("");
     }
 
-    const handleSubmit = (event : React.FormEvent) => {
+    const handleSubmit =  async (event : React.FormEvent) => {
+        
             event.preventDefault();
+
+        // try{
+        //        const res =  await axios.get('/api/register', {params : {username : name,password : pass,}
+        //     });
+
+        //     console.log("successfully logged in..", res);
+
+        // }catch(error){
+        //     console.error("axios error", error);
+        // }
 
             setunameBool(false);
             setpassBool(false);

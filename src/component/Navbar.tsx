@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Home, PersonAddAlt1, TableChart, Article, FormatListBulleted } from "@mui/icons-material";
+import { Home, PersonAddAlt1, TableChart, Article, Api } from "@mui/icons-material";
 import { Toolbar } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
@@ -42,6 +42,7 @@ const Page = ({window, children} : Props) => {
       {text : 'Button', icon : <Gamepad/>, path : "/button"},
       {text : 'Grid', icon : <TableChart/>, path : "/Grid"},
       {text : 'Card', icon : <Article/>, path : "/card"},
+      {text : 'APIs', icon : <Api/>, path : "/res"},
     ]
 
     const drawer = (
