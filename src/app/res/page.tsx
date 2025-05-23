@@ -51,6 +51,7 @@ const page = () => {
         setPatchRes(patchResponse.data);
         setPatchResStatus(patchResponse.status);
         setPatchResStText(patchResponse.statusText);
+        console.log(patchResponse);
 
         const deleteResponse = await api.delete();
         setDeleteRes(deleteResponse.data);
