@@ -29,9 +29,9 @@ type Post = {
           <>   
 
 
-                <div className= "relative flex h-[200px] items-center justify-center mt-[65px] w-full" style={{border : "0px solid black"}}>  
+                <div className= "relative flex h-[200px] items-center justify-center mt-[65px] w-full overflow-hidden" style={{border : "0px solid black"}}>  
 
-                  <div className='absolute inset-0 h-full w-full bg-cover bg-no-repeat]' style={{backgroundImage : "url('/images/food.jpg')", backgroundPosition : "20% 13%" ,border : "1px solid red"}}>
+                  <div className='absolute inset-0 h-full w-full bg-cover bg-no-repeat' style={{backgroundImage : "url('/images/food.jpg')", backgroundPosition : "20% 13%" ,border : "1px solid red"}}>
                   </div>
 
                 </div>
