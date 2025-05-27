@@ -2,19 +2,29 @@ import axios from "axios";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 
-type Props = {
-    params : {
-        id : string;
-    }
+
+// Define a type for the expected params structure : 📌
+interface RecipeDetailParams {
+    id : string
+}
+
+// Define the Props type for the component : 📌
+interface RecipeDetailProps {
+    params : Promise<RecipeDetailParams>;    //params is a promise
 }
 
 
-export default async function RecipeDetail({params} : Props) {
 
-        const res = await axios.get(`https://dummyjson.com/recipes/${params.id}`);
+
+export default async function RecipeDetail({params} : RecipeDetailProps) {
+
+         const {id} = await params;   // Await the params to destructure the 'id'👍👍
+
+        const res = await axios.get(`https://dummyjson.com/recipes/${id}`);
         const recipe = res.data;
 
-        return(
+
+return(
 
 <>
 <div className="w-full h-full" style={{backgroundColor : "#fef8dd", border:"0.1px solid black"}}>
