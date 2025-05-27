@@ -2,8 +2,14 @@ import axios from "axios";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 
+type Props = {
+    params : {
+        id : string;
+    }
+}
 
-export default async function RecipeDetail({params} : {params : {id : string}}) {
+
+export default async function RecipeDetail({params} : Props) {
 
         const res = await axios.get(`https://dummyjson.com/recipes/${params.id}`);
         const recipe = res.data;
