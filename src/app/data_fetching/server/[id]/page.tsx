@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Typography } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 
 
 // Define a type for the expected params structure : 📌
@@ -29,8 +30,11 @@ return(
 <>
 <div className="w-full h-full" style={{backgroundColor : "#fef8dd", border:"0.1px solid black"}}>
 
-    <div className="flex items-center justify-center mt-[80px] mb-[20px]">
-        <Typography className="underline underline-offset-4" fontFamily={"var(--font-cinzel)"} sx={{fontWeight : "bold", color : "orangered", fontSize : "27px"}}> {recipe.name} </Typography>
+    <div className="relative mt-[80px] mb-[20px]">
+
+        <Link className="absolute left-4 top-1/2 -translate-y-1/2 text-3xl hover:scale-110" href={"/data_fetching/server"}> &#x21d0; </Link>
+        <Typography className="text-center underline underline-offset-4" fontFamily={"var(--font-cinzel)"} sx={{fontWeight : "bold", color : "orangered", fontSize : "27px"}}> {recipe.name} </Typography>
+
     </div>
 
     <div className="flex flex-col space-y-3 items-center justify-center mt-[10px] mb-[70px]">
@@ -61,8 +65,6 @@ return(
                         }
 
                     </ul>
-
-                    
 
     </div>
 
