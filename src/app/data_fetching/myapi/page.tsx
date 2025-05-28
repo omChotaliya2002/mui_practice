@@ -5,7 +5,7 @@ import React from 'react';
 const fetchProtectedData = async () => {
 
     const res = await fetch("/myapi/protected", {
-        method : "GET`",
+        method : "GET",
         headers : {
             Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -14,7 +14,7 @@ const fetchProtectedData = async () => {
 
 
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
 
 }
 
