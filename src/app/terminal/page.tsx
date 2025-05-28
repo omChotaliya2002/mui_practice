@@ -66,7 +66,7 @@ const Page = () => {
   return (
 
 
-    <div className='w-full h-[47.4vh] bg-black p-4 flex items-center justify-center'>
+    <div className='w-full h-screen bg-black p-4 flex items-center justify-center'>
         <Typography fontFamily={"var(--font-op)"} sx={{color : "#4CBB17", fontSize : "20px"}}> 
            {displayText}
            {charIndex >= lines[currentLine]?.length && <BlinkingDots/>}  
