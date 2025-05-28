@@ -1,8 +1,9 @@
 
 import type { Metadata } from "next";
-import { Lato, Ubuntu, Oswald, Cinzel } from "next/font/google";
+import { Lato, Ubuntu, Oswald, Cinzel, Overpass_Mono } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "../component/LayoutWrapper";
+import IdleTimerProvider from "@/component/IdleTimerProvider";  // to invoke the idleTimer ⌚📌📌
 
 
 const ubuntu = Ubuntu({
@@ -29,6 +30,12 @@ const cinzel = Cinzel({
   weight : ["400", "700"]
 });
 
+const overpass = Overpass_Mono({
+  variable: "--font-op",
+  subsets: ["latin"],
+  weight : ["400", "700"]
+});
+
 
 export const metadata: Metadata = {
   title: "Web World 🌐",
@@ -44,11 +51,12 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={`${ubuntu.variable} ${oswald.variable} ${lato.variable} ${cinzel.variable} antialiased`}>
+      <body className={`${ubuntu.variable} ${oswald.variable} ${lato.variable} ${cinzel.variable} ${overpass.variable} antialiased`}>
           
           {/* <ThemeReg> */}
 
           <LayoutWrapper>
+              {/* <IdleTimerProvider/> */}   
               {children}    
           </LayoutWrapper> 
 
