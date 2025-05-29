@@ -43,6 +43,12 @@ const Page = ({window} : Props) => {
       {text : 'Card', icon : <Article/>, path : "/card"},
       {text : 'APIs', icon : <Api/>, path : "/res"},
       {text : 'Axios', icon : <ListAlt/>, path : "/data_fetching"},
+
+      {text : 'Excel Processor', 
+        icon : (
+          <Image className="mt-[-5px]" src={"/images/excel.svg"} alt="Excel" height={20} width={20}/>
+        ) , 
+        path : "/xlsx"},
     ]
 
     const drawer = (
@@ -62,7 +68,7 @@ const Page = ({window} : Props) => {
 
                     <ListItem key={item.text} style={{border : "0px solid black"}}>
                     
-                      <Link href={item.path} onClick={()=> setDrawerOpen(false)} className="flex flex-row space-x-2 hover:scale-105">
+                      <Link href={item.path} onClick={()=> setDrawerOpen(false)} className="flex flex-row space-x-2 hover:scale-104">
                         <ListItemIcon style={{border : "0px solid black", minWidth : "10px", marginTop : "3.5px"}}>  {item.icon} </ListItemIcon>
                          <ListItemText className="" style={{border : "0px solid black"}} primary = {item.text}/>
                       </Link>
